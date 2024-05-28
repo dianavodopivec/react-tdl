@@ -49,6 +49,33 @@ article {
     -o-border-radius: 15px;
 }
 
+.container-buttons {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
 .drop-down {
     width: 100%;
     height: 50px;
@@ -63,4 +90,8 @@ article {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.svg-delete {
+    pointer-events: none;
 }

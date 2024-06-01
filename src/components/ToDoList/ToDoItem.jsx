@@ -1,11 +1,11 @@
-const ToDoItem = ({content, id, date, deleteActions, isEditing,}) => {
+const ToDoItem = ({content, id, date, deleteActions, editActions,}) => {
     return(
         <section id={id} key={id}>
         <article>
             <p>{content}</p>
             <div className="container-buttons">
-                <button>
-                    <img src="src/assets/edit.svg" alt="edit-svg" />
+                <button id={id} onClick={editActions}>
+                    <img className={"svg-edit"} src="src/assets/edit.svg" alt="edit-svg" />
                 </button>
                 <button id={id} onClick={deleteActions}>
                     <img className={"svg-delete"} src="src/assets/delete.svg" alt="delete-svg" />
